@@ -95,10 +95,12 @@
         <script type="text/javascript">
           function ecg_start() {
             document.getElementById('ecg_image').style.opacity = "1";
+            document.querySelector('img[src="images/ecg.jpg"]').style.display = "none";
           }
   
           function ecg_stop() {
             document.getElementById('ecg_image').style.opacity = "0";
+            document.querySelector('img[src="images/ecg.jpg"]').style.display = "block";
           }
           ecg_stop()
         </script>

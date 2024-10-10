@@ -1,179 +1,461 @@
-<tr onmouseout="ecg_stop()" onmouseover="ecg_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='ecg_image'><video  width=100% height=100% muted autoplay loop>
-        <source src="images/ecg.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video></div>
-        <img src='images/ecg.jpg' width="160">
-      </div>
-      <script type="text/javascript">
-        function ecg_start() {
-          document.getElementById('ecg_image').style.opacity = "1";
-        }
+        
+        <!-- rlhf -->
+        <tr onmouseout="rlhf_stop()" onmouseover="rlhf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='rlhf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/rlhf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rlhf.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function rlhf_start() {
+                document.getElementById('rlhf_image').style.opacity = "1";
+                document.querySelector('img[src="images/rlhf.jpg"]').style.display = "none";
+                }
 
-        function ecg_stop() {
-          document.getElementById('ecg_image').style.opacity = "0";
-        }
-        ecg_stop()
-      </script>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://github.com/aiseungjun/ECG_Challenge_23w">
-          <span class="papertitle">Detection and Risk Measurement of Silent Atrial Fibrillation in ECG Using Diverse AI techniques
-</span>
-      </a>
-      <br>
-      <a>Donghyun Kim(Dep. of Medicine)</a>,
-      <a>Yukyung Byun(Dep. of Nursing)</a>, 
-      <strong>Seungjun Lee</strong>,
-      <a>Seunghwan Lee(Dep. of Medicine)</a>, 
-      <a>Nahyun Cho(Dep. of Medicine)</a>, 
+                function rlhf_stop() {
+                document.getElementById('rlhf_image').style.opacity = "0";
+                document.querySelector('img[src="images/rlhf.jpg"]').style.display = "block";
+                }
+                rlhf_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/aiseungjun/rlhf_test">
+                <span class="papertitle">Fine-tuning Random-Dose CT Reconstruction model with RLHF technique
+        </span>
+            </a>
+            <br>
+            <a>Minwoo Yu(Medisys Ph.D)</a>, 
+            <strong>Seungjun Lee</strong>,
+            <a>Yejin Shun(Dep. of AI)</a>
 
-      <br>
-      <em>Yonsei Medical Scientist Training Program</em>, January 2024 &nbsp <font color="red"><strong>(2nd place)</strong></font>
-      <br>
-      <a href="https://github.com/aiseungjun/ECG_Challenge_23w">GitHub</a>
-      <p></p>
-      <p>
-        A ensembled several CNN models that detect the risk of heart diseases from FFT transformed ECG data.
-      </p>
-    </td>
-  </tr>
+            <br>
+            <em>Yonsei Medical Imaging Lab</em>, April 2024 ~ Present
+            <br>
+            <a href="https://github.com/aiseungjun/rlhf_test">GitHub</a>
+            <p></p>
+            <p>
+                Researching on fine-tuning Random-Dose CT Reconstruction model with RLHF technique by using trainedPerceptual Image Quality Assessment model that outperforms PSNR and SSIM.
+            </p>
+            </td>
+        </tr>
+        
 
+        <!-- gait -->
+        <tr onmouseout="gait_stop()" onmouseover="gait_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='gait_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/gait.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/gait.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function gait_start() {
+                document.getElementById('gait_image').style.opacity = "1";
+                document.querySelector('img[src="images/gait.jpg"]').style.display = "none";                
+                }
 
+                function gait_stop() {
+                document.getElementById('gait_image').style.opacity = "0";
+                document.querySelector('img[src="images/gait.jpg"]').style.display = "block";
+                }
+                gait_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/aiseungjun/Gait_Analysis/blob/main/8%EC%A1%B0_Predicting%20Disease%20Probabilities%20Using%20a%20Single%20Gait%20Data%20Type%20Through%20Deep%20Learning.pdf">
+                <span class="papertitle">Predicting Disease Probabilities Using a Single Gait Data Type Through Deep Learning </span>
+            </a>
+            <br>
+            <a>Sangyeon Park(Dep. of Medicine)</a>,
+            <a>Hajung Bae(Dep. of Medicine)</a>, 
+            <strong>Seungjun Lee</strong>,
+            <a>Haegyu Oh(Dep. of Medicine)</a>, 
+            <a>Heehyun Jung(Dep. of Medicine)</a>, 
 
-
-<tr onmouseout="gait_stop()" onmouseover="gait_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='gait_image'><video  width=100% height=100% muted autoplay loop>
-        <source src="images/gait.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video></div>
-        <img src='images/gait.jpg' width="160">
-      </div>
-      <script type="text/javascript">
-        function gait_start() {
-          document.getElementById('gait_image').style.opacity = "1";
-        }
-
-        function gait_stop() {
-          document.getElementById('gait_image').style.opacity = "0";
-        }
-        gait_stop()
-      </script>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://github.com/aiseungjun/Gait_Analysis/blob/main/8%EC%A1%B0_Predicting%20Disease%20Probabilities%20Using%20a%20Single%20Gait%20Data%20Type%20Through%20Deep%20Learning.pdf">
-          <span class="papertitle">Predicting Disease Probabilities Using a Single Gait Data Type Through Deep Learning </span>
-      </a>
-      <br>
-      <a>Sangyeon Park(Dep. of Medicine)</a>,
-      <a>Hajung Bae(Dep. of Medicine)</a>, 
-      <strong>Seungjun Lee</strong>,
-      <a>Haegyu Oh(Dep. of Medicine)</a>, 
-      <a>Heehyun Jung(Dep. of Medicine)</a>, 
-
-      <br>
-      <em>Yonsei Medical Scientist Training Program</em>, July 2024
-      <br>
-      <a href="https://github.com/aiseungjun/Gait_Analysis/blob/main/8%EC%A1%B0_Predicting%20Disease%20Probabilities%20Using%20a%20Single%20Gait%20Data%20Type%20Through%20Deep%20Learning.pdf">GitHub</a>
-      <p></p>
-      <p>
-        A stacking ensembled model with EfficientNet, Bi-LSTM, and RBF kernel SVM that predicts neurological disorder from single Gait data. Processed three different gait datasets using various preprocessing techniques such as FFT, linear interpolation to remove gravitational acceleration bias, and truncation for medical reasons.
-      </p>
-    </td>
-</tr>
-
-
-
-<tr onmouseout="sticker_stop()" onmouseover="sticker_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='sticker_image'><video  width=100% height=100% muted autoplay loop>
-        <source src="images/sticker.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video></div>
-        <img src='images/sticker.jpg' width="160">
-      </div>
-      <script type="text/javascript">
-        function sticker_start() {
-          document.getElementById('sticker_image').style.opacity = "1";
-        }
-
-        function sticker_stop() {
-          document.getElementById('sticker_image').style.opacity = "0";
-        }
-        sticker_stop()
-      </script>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">SIGMA:Sticker Image Generation by Multimodal Assistant </span>
-
-      <br>
-      <a>Bodam Kim(Dep. of Applied Statistics)</a>,
-      <a>Seyoon Kim(Dep. of Applied Statistics)</a>, 
-      <a>Dongyeon Park(Dep. of CS)</a>,
-      <a>Yejin Kim(Dep. of English Language and Literature)</a>, 
-      <a>Hajin Kim(Dep. of CS)</a>, 
-      <strong>SeungJun Lee</strong>, 
-
-      <br>
-      <em>Yonsei Big Data Club Project</em>, July 2024
-      <br>
-      <p></p>
-      <p>
-        A sticker image generation model by mutiple generative models with multimodal(text to image) assistant.
-      </p>
-    </td>
-</tr>
+            <br>
+            <em>Yonsei Medical Scientist Training Program</em>, July 2024
+            <br>
+            <a href="https://github.com/aiseungjun/Gait_Analysis/blob/main/8%EC%A1%B0_Predicting%20Disease%20Probabilities%20Using%20a%20Single%20Gait%20Data%20Type%20Through%20Deep%20Learning.pdf">GitHub</a>
+            <p></p>
+            <p>
+                A stacking ensembled model with EfficientNet, Bi-LSTM, and RBF kernel SVM that predicts neurological disorder from single Gait data. Processed three different gait datasets using various preprocessing techniques such as FFT, linear interpolation to remove gravitational acceleration bias, and truncation for medical reasons.
+            </p>
+            </td>
+        </tr>
 
 
-<tr onmouseout="yourtube_stop()" onmouseover="yourtube_start()">
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div class="one">
-        <div class="two" id='yourtube_image'><video  width=100% height=100% muted autoplay loop>
-        <source src="images/yourtube.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video></div>
-        <img src='images/yourtube.jpg' width="160">
-      </div>
-      <script type="text/javascript">
-        function yourtube_start() {
-          document.getElementById('yourtube_image').style.opacity = "1";
-        }
+        <!-- sticker -->
+        <tr onmouseout="sticker_stop()" onmouseover="sticker_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='sticker_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/sticker.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/sticker.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function sticker_start() {
+                document.getElementById('sticker_image').style.opacity = "1";
+                document.querySelector('img[src="images/sticker.jpg"]').style.display = "none";
+                }
 
-        function yourtube_stop() {
-          document.getElementById('yourtube_image').style.opacity = "0";
-        }
-        yourtube_stop()
-      </script>
-    </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
-      <a href="https://github.com/smthswt/YourTube_Service">
-          <span class="papertitle">YourTube:Personalized YouTube Algorithm Washer
-</span>
-      </a>
-      <br>
-      <strong>Seungjun Lee</strong>,
-      <a>Kyungwook Park(Dep. of AI)</a>, 
-      <a>Jonghyuk Lim(Dep. of Industrial Engineering)</a>, 
-      <a>Yunyeong Cho(Dep. of Industrial Engineering)</a>,
-      <a>Mingyu Kwak(Dep. of Library and Information Science)</a>,
-      <a>Yejin Kim(Dep. of English Language and Literature)</a>, 
-      <a>Hyunho Kim(Dep. of CS)</a>
+                function sticker_stop() {
+                document.getElementById('sticker_image').style.opacity = "0";
+                document.querySelector('img[src="images/sticker.jpg"]').style.display = "block";
+                }
+                sticker_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">SIGMA:Sticker Image Generation by Multimodal Assistant </span>
 
-      <br>
-      <em>Yonsei Big Data Club Conferences</em>, June 2024 &nbsp <font color="red"><strong>(1st place)</strong></font>
-      <br>
-      <a href="https://github.com/smthswt/YourTube_Service">GitHub</a>
-      <p></p>
-      <p>
-        A chrome extension designed to recommend better videos based on user’s subscriptions and videos data that use an AI solution to classify YouTube videos into user-defined categories by using web scraping and the YouTube API.
-      </p>
-    </td>
-  </tr>
+            <br>
+            <a>Bodam Kim(Dep. of Applied Statistics)</a>,
+            <a>Seyoon Kim(Dep. of Applied Statistics)</a>, 
+            <a>Dongyeon Park(Dep. of CS)</a>,
+            <a>Yejin Kim(Dep. of English Language and Literature)</a>, 
+            <a>Hajin Kim(Dep. of CS)</a>, 
+            <strong>SeungJun Lee</strong>, 
+
+            <br>
+            <em>Yonsei Big Data Club Project</em>, July 2024
+            <br>
+            <p></p>
+            <p>
+                A sticker image generation model by mutiple generative models with multimodal(text to image) assistant.
+            </p>
+            </td>
+        </tr>
 
 
-  
+        <!-- yourtube -->
+        <tr onmouseout="yourtube_stop()" onmouseover="yourtube_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='yourtube_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/yourtube.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/yourtube.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function yourtube_start() {
+                document.getElementById('yourtube_image').style.opacity = "1";
+                document.querySelector('img[src="images/yourtube.jpg"]').style.display = "none";
+                }
+
+                function yourtube_stop() {
+                document.getElementById('yourtube_image').style.opacity = "0";
+                document.querySelector('img[src="images/yourtube.jpg"]').style.display = "block";
+                }
+                yourtube_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/smthswt/YourTube_Service">
+                <span class="papertitle">YourTube:Personalized YouTube Algorithm Washer
+        </span>
+            </a>
+            <br>
+            <strong>Seungjun Lee</strong>,
+            <a>Kyungwook Park(Dep. of AI)</a>, 
+            <a>Jonghyuk Lim(Dep. of Industrial Engineering)</a>, 
+            <a>Yunyeong Cho(Dep. of Industrial Engineering)</a>,
+            <a>Mingyu Kwak(Dep. of Library and Information Science)</a>,
+            <a>Yejin Kim(Dep. of English Language and Literature)</a>, 
+            <a>Hyunho Kim(Dep. of CS)</a>
+
+            <br>
+            <em>Yonsei Big Data Club Conferences</em>, June 2024 &nbsp <font color="red"><strong>(1st place)</strong></font>
+            <br>
+            <a href="https://github.com/smthswt/YourTube_Service">GitHub</a>
+            <p></p>
+            <p>
+                A chrome extension designed to recommend better videos based on user’s subscriptions and videos data that use an AI solution to classify YouTube videos into user-defined categories by using web scraping and the YouTube API.
+            </p>
+            </td>
+        </tr>
+
+
+        <!-- kaggle -->
+        <tr onmouseout="kaggle_stop()" onmouseover="kaggle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='kaggle_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/kaggle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/kaggle.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function kaggle_start() {
+                document.getElementById('kaggle_image').style.opacity = "1";
+                document.querySelector('img[src="images/kaggle.jpg"]').style.display = "none";
+                }
+
+                function kaggle_stop() {
+                document.getElementById('kaggle_image').style.opacity = "0";
+                document.querySelector('img[src="images/kaggle.jpg"]').style.display = "block";
+                }
+                kaggle_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <span class="papertitle"><a href="https://www.kaggle.com/competitions/planttraits2024/overview">PlantTraits2024</a><a href="https://www.kaggle.com/competitions/isic-2024-challenge/overview">Skin Cancer Detection with 3D-TBP</a>
+        </span>
+            </a>
+            <br>
+            <strong>Seungjun Lee</strong>
+
+            <br>
+            <em>Yonsei Big Data Club Project (Kaggle Competition)</em>, November 2023 - May 2024
+            <br>
+            <a href="https://github.com/aiseungjun/ISIC-2024_TBP">GitHub</a>
+            <p></p>
+            <p>
+                The competition tasks involved predicting plant traits using crowd-sourced plant images and ancillary data, and detecting patient has one of the such possible skin cancer from the patient’s 3D-TBP images. Developed CNN, Swin Transformer, and XGBoost Regressor models.
+            </p>
+            </td>
+        </tr>
+
+
+        <!-- ecg -->
+        <tr onmouseout="ecg_stop()" onmouseover="ecg_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='ecg_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/ecg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/ecg.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function ecg_start() {
+                document.getElementById('ecg_image').style.opacity = "1";
+                document.querySelector('img[src="images/ecg.jpg"]').style.display = "none";
+                }
+
+                function ecg_stop() {
+                document.getElementById('ecg_image').style.opacity = "0";
+                document.querySelector('img[src="images/ecg.jpg"]').style.display = "block";
+                }
+                ecg_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/aiseungjun/ECG_Challenge_23w">
+                <span class="papertitle">Detection and Risk Measurement of Silent Atrial Fibrillation in ECG Using Diverse AI techniques
+        </span>
+            </a>
+            <br>
+            <a>Donghyun Kim(Dep. of Medicine)</a>,
+            <a>Yukyung Byun(Dep. of Nursing)</a>, 
+            <strong>Seungjun Lee</strong>,
+            <a>Seunghwan Lee(Dep. of Medicine)</a>, 
+            <a>Nahyun Cho(Dep. of Medicine)</a>, 
+
+            <br>
+            <em>Yonsei Medical Scientist Training Program</em>, January 2024 &nbsp <font color="red"><strong>(2nd place)</strong></font>
+            <br>
+            <a href="https://github.com/aiseungjun/ECG_Challenge_23w">GitHub</a>
+            <p></p>
+            <p>
+                A ensembled several CNN models that detect the risk of heart diseases from FFT transformed ECG data.
+            </p>
+            </td>
+        </tr>
+
+
+        <!-- aws -->
+        <tr onmouseout="aws_stop()" onmouseover="aws_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='aws_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/ct.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/aws.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function aws_start() {
+                document.getElementById('aws_image').style.opacity = "1";
+                document.querySelector('img[src="images/aws.jpg"]').style.display = "none";
+                }
+
+                function aws_stop() {
+                document.getElementById('aws_image').style.opacity = "0";
+                document.querySelector('img[src="images/aws.jpg"]').style.display = "block";
+                }
+                aws_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <span class="papertitle"> JMJP: A fancy web that evaluate and visualize the important companies (by TaeMu JaePyo) <font color="red"><strong>(3nd place)</strong></font></span>
+            <br>
+
+            <strong>Seungjun Lee</strong>,
+            <a>Myungchul Hwangbo(Dep. of AI)</a>,
+            <a>Jinman Kim(Dep. of AI)</a>,
+            <a>Inchan Park(Dep. of CS)</a>,
+            <a>Heesun Kim(Dep. of CS)</a>
+
+            <br>
+            <em>AWS X Yonsei Cloud Winter Camp 2023 Summer</em>, December 2023 - February 2024 &nbsp 
+            <br>
+            <p></p>
+            <p>
+                A web platform that visualizes multi-dimensional evaluations of companies based on recent news articles and financial statements.
+            </p>
+            </td>
+        </tr>
+
+
+
+        <!-- mbti -->
+        <tr onmouseout="mbti_stop()" onmouseover="mbti_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='mbti_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mbti.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mbti.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function mbti_start() {
+                document.getElementById('mbti_image').style.opacity = "1";
+                document.querySelector('img[src="images/mbti.jpg"]').style.display = "none";
+                }
+
+                function mbti_stop() {
+                document.getElementById('mbti_image').style.opacity = "0";
+                document.querySelector('img[src="images/mbti.jpg"]').style.display = "block";
+                }
+                mbti_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/aiseungjun/MBTI_project">
+                <span class="papertitle">MBTAI: AI chatbot that classify users’ MBTI types and represent one of the MBTI
+        </span>
+            </a>
+            <br>
+            <a>Chaehyun Kim</a>,
+            <a>Moohyun Kim</a>, 
+            <a>Yejin Kim(Dep. of English Language and Literature)</a>, 
+            <a>Jongjin Kim(Dep. of Industrial Engineering)</a>, 
+            <strong>Seungjun Lee</strong>
+
+            <br>
+            <em>Yonsei Big Data Club Conferences</em>, December 2023 &nbsp <font color="red"><strong>(3nd place)</strong></font>
+            <br>
+            <a href="https://github.com/aiseungjun/MBTI_project">GitHub</a>
+            <p></p>
+            <p>
+                An AI solution to classify users’ MBTI types through interactions with an AI chatbot within up to five exchanges. And, Developed chatbots, each chatbot represent one of the four MBTI personality types(persona).
+            </p>
+            </td>
+        </tr>
+
+
+        <!-- phone -->
+        <tr onmouseout="phone_stop()" onmouseover="phone_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='phone_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/phone.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/phone.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function phone_start() {
+                document.getElementById('phone_image').style.opacity = "1";
+                document.querySelector('img[src="images/phone.jpg"]').style.display = "none";
+                }
+
+                function phone_stop() {
+                document.getElementById('phone_image').style.opacity = "0";
+                document.querySelector('img[src="images/phone.jpg"]').style.display = "block";
+                }
+                phone_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/yonseivnlclassroom/final-project-waganda-4ever">
+                <span class="papertitle">Screen Scratch and Damage Detection Model
+        </span>
+            </a>
+            <br>
+            <a>Myungchul Hwangbo(Dep. of AI)</a>,
+            <strong>Seungjun Lee</strong>,
+            <a>Kyungwook Park(Dep. of AI)</a>,
+            <a>Seokjun Yoon(Dep. of AI)</a>
+
+            <br>
+            <em>Artificial Intelligence Course at Yonsei University</em>, December 2023
+            <br>
+            <a href="https://github.com/yonseivnlclassroom/final-project-waganda-4ever">GitHub</a> &nbsp <a href=https://docs.google.com/document/d/14MG6_klx5sMftmyP2Z9S5MFHFqA7CZ648qsIMQW83gE/edit>Paper</a>
+            <p></p>
+            <p>
+                A dataset of electronic devices with various damage types for segmentation(hand-made) and classification(using web-scraping and Stable Diffusion) to identify the condition of devices in photos. And Developed the models that segment device screens and determine the presence of damage.
+            </p>
+            </td>
+        </tr>
+
+
+        <!-- ct -->
+        <tr onmouseout="ct_stop()" onmouseover="ct_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='ct_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/ct.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/ct.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+                function ct_start() {
+                document.getElementById('ct_image').style.opacity = "1";
+                document.querySelector('img[src="images/ct.jpg"]').style.display = "none";
+                }
+
+                function ct_stop() {
+                document.getElementById('ct_image').style.opacity = "0";
+                document.querySelector('img[src="images/ct.jpg"]').style.display = "block";
+                }
+                ct_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://github.com/aiseungjun/CT-denoising">
+                <span class="papertitle"> Low‑Dose CT Scan Denoising using Neural Networks
+        </span>
+            </a>
+            <br>
+            <strong>Seungjun Lee</strong>
+
+            <br>
+            <em>Yonsei Medical Imaging Lab</em>, November 2023 &nbsp
+            <br>
+            <a href="https://github.com/aiseungjun/CT-denoising">GitHub</a>
+            <p></p>
+            <p>
+                CT denoising and resolution models such as RED-CNN, HCflow, RCAN, and ESRGAN.
+            </p>
+            </td>
+        </tr>
+
+
+        
+
+
+        
+
